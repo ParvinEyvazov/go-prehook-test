@@ -5,6 +5,8 @@ import (
 	"testing"
 )
 
+var create_error = false
+
 func TestSum(t *testing.T) {
 
 	t.Run("SUCCESS CASE", func(t *testing.T) {
@@ -19,7 +21,6 @@ func TestSum(t *testing.T) {
 	})
 
 	t.Run("ERROR CASE", func(t *testing.T) {
-		create_error := false
 
 		a, b := 4, 5
 		expected := 10
